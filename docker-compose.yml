@@ -3,8 +3,8 @@ services:
     container_name: ms_pg_sql
     image: postgres
     environment:
-      POSTGRES_USER: alibou
-      POSTGRES_PASSWORD: alibou
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: root
       PGDATA: /data/postgres
     volumes:
       - postgres:/data/postgres
