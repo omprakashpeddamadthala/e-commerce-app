@@ -1,4 +1,4 @@
-package com.ms.dlj.product;
+package com.ms.dlj;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

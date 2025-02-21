@@ -1,5 +1,5 @@
 
-package com.ms.dlj.product.model;
+package com.ms.dlj.model;
 
 import jakarta.persistence.*;
 import lombok.*;

@@ -1,4 +1,4 @@
-package com.ms.dlj.product.model;
+package com.ms.dlj.model;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
