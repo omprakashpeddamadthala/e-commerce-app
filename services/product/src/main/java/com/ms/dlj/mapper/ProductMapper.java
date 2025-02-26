@@ -5,7 +5,9 @@ import com.ms.dlj.model.Product;
 import com.ms.dlj.records.ProductPurchaseResponse;
 import com.ms.dlj.records.ProductRequest;
 import com.ms.dlj.records.ProductResponse;
+import org.springframework.stereotype.Component;
 
+@Component
 public class ProductMapper {
 
     public Product toProduct(ProductRequest request) {

@@ -1,6 +1,8 @@
 package com.ms.dlj.handler;
 
 import com.ms.dlj.exceptions.ErrorResponse;
+import com.ms.dlj.exceptions.ProductPurchaseException;
+import jakarta.persistence.EntityNotFoundException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.FieldError;
@@ -14,10 +16,15 @@ import java.util.Map;
 @RestControllerAdvice
 public class GlobalExceptionHandler {
 
-/*    @ExceptionHandler(CustomerNotFoundException.class)
+    @ExceptionHandler(ProductPurchaseException.class)
     public ResponseEntity<String> handle(Exception exp) {
         return ResponseEntity.status( HttpStatus.NOT_FOUND ).body( exp.getMessage() );
-    }*/
+    }
+
+    @ExceptionHandler(EntityNotFoundException.class)
+    public ResponseEntity<String> handle(EntityNotFoundException exp) {
+        return ResponseEntity.status( HttpStatus.BAD_REQUEST ).body( exp.getMessage() );
+    }
 
     @ExceptionHandler(MethodArgumentNotValidException.class)
     public ResponseEntity<ErrorResponse> handle(MethodArgumentNotValidException exp) {
