@@ -27,10 +27,10 @@ public class ProductController {
         return ResponseEntity.ok(productService.createProduct(request));
     }
 
-    @PostMapping
-    public ResponseEntity<List<ProductPurchaseResponse>> purchaseProducts(List<ProductPurchaseRequest> request) {
+    @PostMapping("/purchase")
+    public ResponseEntity<List<ProductPurchaseResponse>> purchaseProducts(List<ProductPurchaseRequest> productPurchaseRequests) {
         log.info( "Received POST request to purchase product " );
-        return ResponseEntity.ok(productService.purchaseProducts(request));
+        return ResponseEntity.ok(productService.purchaseProducts(productPurchaseRequests));
     }
 
     @GetMapping("/productId")
