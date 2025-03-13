@@ -22,7 +22,7 @@
                 @NotNull(message = "Customer id should be present")
                 @NotEmpty(message = "Customer id should be present")
                 @NotBlank(message = "Customer id should be present")
-                String customerId,
+                Integer customerId,
 
                 @NotEmpty(message = "You should have at least one product")
                 List<PurchaseRequest> products
