@@ -1,5 +1,6 @@
 package com.ms.dlj.orderline;
 
+import com.ms.dlj.order.Order;
 import jakarta.persistence.*;
 import lombok.*;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
