@@ -1,8 +1,6 @@
-package com.ms.dlj.mapper;
+package com.ms.dlj.orderline;
 
 import com.ms.dlj.order.Order;
-import com.ms.dlj.orderline.OrderLine;
-import com.ms.dlj.records.OrderLineRequest;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -17,5 +15,9 @@ public class OrderLineMapper {
                 .productId( orderLineRequest.productId() )
                 .quantity( orderLineRequest.quantity() )
                 .build();
+    }
+
+    public OrderLineResponse toOrderLineResponse(OrderLine orderLine) {
+        return new OrderLineResponse( orderLine.getId(), orderLine.getQuantity() );
     }
 }

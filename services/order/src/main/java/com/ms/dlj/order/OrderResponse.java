@@ -7,6 +7,6 @@ public record OrderResponse(
         String reference,
         BigDecimal totalAmount,
         PaymentMethod paymentMethod,
-        Integer customerId
+        String customerId
 ) {
 }

@@ -1,8 +1,5 @@
-package com.ms.dlj.mapper;
+package com.ms.dlj.order;
 
-import com.ms.dlj.order.Order;
-import com.ms.dlj.order.OrderRequest;
-import com.ms.dlj.order.OrderResponse;
 import org.springframework.stereotype.Service;
 
 @Service

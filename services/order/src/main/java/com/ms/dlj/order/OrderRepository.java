@@ -1,6 +1,5 @@
-package com.ms.dlj.repository;
+package com.ms.dlj.order;
 
-import com.ms.dlj.order.Order;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.io.Serializable;
