@@ -1,12 +1,9 @@
-package com.ms.dlj.service;
+package com.ms.dlj.orderline;
 
-import com.ms.dlj.mapper.OrderLineMapper;
-import com.ms.dlj.orderline.OrderLine;
-import com.ms.dlj.product.PurchaseRequest;
-import com.ms.dlj.records.OrderLineRequest;
-import com.ms.dlj.repository.OrderLineRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 @Service
 @RequiredArgsConstructor
@@ -19,6 +16,12 @@ public class OrderLineService {
     public Integer saveOrderLine(OrderLineRequest orderLineRequest) {
         OrderLine orderLine = orderLineMapper.toOrderLine(orderLineRequest);
         return orderLineRepository.save(orderLine).getId();
+
+    }
+
+    public List<OrderLineResponse> getOrderLinesByOrderId(String orderId) {
+        return orderLineRepository.findAllByOrderId(Integer.parseInt(orderId))
+                .stream().map(orderLineMapper::toOrderLineResponse).toList();
 
     }
 }

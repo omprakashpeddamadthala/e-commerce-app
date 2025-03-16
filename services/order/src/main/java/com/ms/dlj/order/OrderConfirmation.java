@@ -1,7 +1,6 @@
-package com.ms.dlj.records;
+package com.ms.dlj.order;
 
 import com.ms.dlj.customer.CustomerResponse;
-import com.ms.dlj.order.PaymentMethod;
 import com.ms.dlj.product.PurchaseResponse;
 
 import java.math.BigDecimal;

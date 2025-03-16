@@ -1,4 +1,4 @@
-package com.ms.dlj.records;
+package com.ms.dlj.orderline;
 
 public record OrderLineRequest(
         Integer id,

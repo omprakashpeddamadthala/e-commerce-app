@@ -18,8 +18,8 @@ spring:
       value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
       properties:
         spring.json.tpe.mapping: orderConfirmation:com.ms.dlj.records.OrderConfirmation
-  application:
-    config:
-      customer-url: http://localhost:8222/api/v1/customers
-      product-url: http://localhost:8222/api/v1/products
-      payment-url: http://localhost:8222/api/v1/payments
+application:
+  config:
+    customer-url: http://localhost:8222/api/v1/customers
+    product-url: http://localhost:8222/api/v1/products
+    payment-url: http://localhost:8222/api/v1/payments

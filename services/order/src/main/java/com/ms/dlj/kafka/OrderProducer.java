@@ -1,6 +1,6 @@
 package com.ms.dlj.kafka;
 
-import com.ms.dlj.records.OrderConfirmation;
+import com.ms.dlj.order.OrderConfirmation;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.kafka.core.KafkaTemplate;

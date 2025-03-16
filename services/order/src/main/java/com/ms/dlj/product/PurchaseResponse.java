@@ -1,5 +1,7 @@
 package com.ms.dlj.product;
 
+import java.math.BigDecimal;
+
 public record PurchaseResponse(
         Integer productId,
         String name,
